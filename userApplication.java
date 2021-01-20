@@ -1,7 +1,7 @@
-/*-------------------------------*
+/*---------------------------------------*
  *	Author: Alexandros Petridis	 * 
  *	Class: Computer Networks 2	 *
- *-------------------------------*/
+ *---------------------------------------*/
 
 package dyktia2;
 
@@ -49,40 +49,14 @@ public class userApplication {
 		String str = df.format(today);
 		String str1 = str.substring(0, 8);
 		str1 = str1.replace('/', '.');
-		String path = ("D:\\AUTH\\Δίκτυα 2\\projectDyktia\\" + str1);
+		String path = ("D:\\AUTH\\Γ„ΓΓªΓ΄ΓµΓ΅ 2\\projectDyktia\\" + str1);
 		File file = new File(path);
 		file.mkdirs();
 		System.out.println("All Files from this section will be saved to: "+ path + "\n");
 		
-		
-		app.vehicle(vehicle_OBD_code, pid[0], path);
-
-		
-		//Working
-		/*
-		 * 
-		 * app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		app.sound(audio_request_code, false,false, 999, path); 
-		 */
-		
-		 
-		
+				
  		//Echo is For 4 minutes record
-		/*
+	
 		app.echo(echo_request_code, path);//+TXX for Temperatures only TT00 works.
 		app.echo(echo_request_code+"T00", path);
 		app.echo("E0000", path); //E0000 for no delay
@@ -103,7 +77,7 @@ public class userApplication {
 		for (int i=0; i<6; i++) {
 			app.vehicle(vehicle_OBD_code, pid[i], path); // Creating a .txt with Vehicle info for vehicle_OBD_code and pid[i] code.
 		}
-*/
+
 		
 		
 	}
